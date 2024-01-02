@@ -1,0 +1,47 @@
+
+
+.l-header{
+    &__logo{
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+        padding: 10px;
+    }
+    &__list{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+
+    }
+    &__inner{
+        width: 33%;
+        text-align: center;
+        background-color: #a34747;
+
+        h2{
+            color: #fff;
+        }
+    }
+}
+.l-content{
+    width: 80%;
+    margin: 0 auto;
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: al;
+    }
+}
+
+.c-content{
+    &__inner{
+        background-color: #f59e9e;
+        display: flex;
+        width: 100%;
+    }
+
+    p{
+        padding: 10px;
+    }
+}
