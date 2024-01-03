@@ -1,3 +1,6 @@
+.l-header {
+  width: 100%;
+}
 .l-header__logo {
   color: #fff;
   background-color: #000;
@@ -5,17 +8,33 @@
   padding: 10px;
 }
 .l-header__list {
+  top: 0;
+  padding: 0px;
+  margin: 0px;
   display: flex;
-  margin: 0 auto;
+  list-style: none;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
-.l-header__inner {
+.l-header__list li {
+  list-style-type: none;
   width: 33%;
+  border: 2px solid #000;
   text-align: center;
-  background-color: #a34747;
+  height: 50px;
+  line-height: 50px;
+  background-color: #da1414;
 }
-.l-header__inner h2 {
+.l-header__list li a {
+  width: 100%;
   color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+.l-header__list li a:hover {
+  border: 3px solid #000;
+  box-shadow: 3px 2px 3px #da1414;
 }
 
 .l-content {
@@ -27,26 +46,43 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.l-content__wrap img {
-  width: 100%;
-}
 .l-content__inner {
   width: 32%;
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
+}
+.l-content__bloc {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.l-content__bloc img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  display: block;
+}
+.l-content__bloc a:hover img {
+  transform: scale(1.3);
+  transition: all 1s ease;
 }
 .l-content__btn {
   width: 80%;
   margin: 0 auto;
   border: 2px solid #da1414;
   transform: skew(-22deg);
-  box-shadow: #da1414;
-  padding: 10px;
+  box-shadow: 3px 2px 3px;
 }
 .l-content__btn a {
   padding: 10px;
   text-decoration: none;
+  display: block;
   color: #000;
+}
+.l-content__btn a:hover {
+  background-color: #da1414;
+  transition: all 1s ease;
+  color: #fff;
 }
 
 @media screen and (max-width: 800px) {
@@ -94,19 +130,21 @@
     margin-bottom: 30px;
   }
 }
-.c-content__inner {
-  background-color: #f59e9e;
-  display: flex;
-  width: calc(100% - 40px);
-  justify-content: space-between;
-  color: #fff;
-  padding: 0px 20px 0px;
-}
 .c-content__inner h3 {
+  padding: 20px;
   font-size: 20px;
+  background-color: #f59e9e;
+  color: #fff;
+  position: relative;
+}
+.c-content__inner h3::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
 }
 .c-content p {
-  padding: 20px;
+  padding: 10px 20px;
+  color: black;
 }
 
 .f-content {
