@@ -50,7 +50,7 @@ table {
 }
 
 .l-header {
-  position: fixed;
+  position: relative;
   width: 100%;
   margin: 20px 0px -100px;
 }
@@ -91,10 +91,8 @@ table {
 .banner {
   background-image: url(/Users/sawehmuedah/Desktop/Frontend-Assignment/Day03/img/BG.png);
   height: 1000px;
-  background-size: 100% 100%;
   background-position: center;
   text-align: center;
-  position: relative;
 }
 .banner__bloc {
   width: 50%;
