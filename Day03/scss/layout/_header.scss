@@ -1,0 +1,44 @@
+.l-header{
+    position: fixed;
+    width: 100%;
+    margin: 20px 0px -100px;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        width: 60%;
+
+        h1{
+            margin-right: 20px;
+        }
+    }
+
+    &__nav{
+        ul{
+            display: flex;
+            justify-content: flex-start;
+            list-style: none;
+            padding: 16px 0;
+
+
+            li{
+                a{
+                    text-decoration: none;
+                    padding: 0 10px;
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+    &__signin{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

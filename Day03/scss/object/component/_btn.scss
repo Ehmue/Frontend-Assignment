@@ -1,0 +1,33 @@
+.c-btn {
+    width: 100%;
+    margin: 0 auto;
+    
+  
+    a {
+      line-height: 28px;
+      display: block;
+      text-align: center;
+      color: #fff;
+      border-radius: 25px;
+      padding: 10px;
+    }
+  
+    &--signup {
+        margin-right: 30px;
+        
+    }
+    a:hover{
+        border: 2px solid #fff;
+        
+    }
+
+    &--discover {
+        width: 30%;
+
+    a {
+      background: #e76342;
+      border: 1px solid #c25d44;
+    }
+  }
+
+}
