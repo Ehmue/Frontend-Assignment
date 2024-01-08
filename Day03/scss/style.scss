@@ -1,4 +1,5 @@
 @use 'foundation/init';
+@use 'foundation/fonts';
 @use 'foundation/reset';
 @use 'foundation/setting';
 
@@ -6,9 +7,13 @@
 //layout
 @use 'layout/header';
 @use 'layout/layout';
+@use 'layout/footer';
 
 
 //object
 @use 'object/project/banner';
+@use 'object/project/card-activity';
+@use 'object/project/form';
 @use 'object/component/btn';
+@use 'object/component/title';
 @use 'object/project/card-bloc';
