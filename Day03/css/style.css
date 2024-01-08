@@ -14,6 +14,7 @@ a {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #faf4f2;
+  width: 1920px;
 }
 
 p {
@@ -58,7 +59,7 @@ table {
 .l-header {
   position: fixed;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .l-header__wrap {
   display: flex;
@@ -92,18 +93,19 @@ table {
 }
 
 .l-wrap-inner {
-  max-width: 1080px;
+  max-width: 1518px;
   margin: 0 auto;
 }
 
 .c-page-top {
   position: sticky;
   bottom: 0;
+  margin-bottom: -25px;
 }
 .c-page-top__inner {
   position: absolute;
   bottom: 0;
-  right: 178px;
+  right: 200px;
 }
 .c-page-top__inner a {
   display: block;
@@ -111,7 +113,7 @@ table {
   height: 60px;
 }
 .c-page-top__inner img {
-  width: auto;
+  width: 100%;
 }
 
 .l-footer {
@@ -137,20 +139,25 @@ table {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #3b3735;
+  line-height: 28px;
+  font-weight: 400;
 }
 .l-footer__info {
   width: 40%;
 }
 .l-footer__info p {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
+}
+.l-footer__info h5 {
+  margin-bottom: 22px;
 }
 .l-footer__info ul {
   display: flex;
-  justify-content: space-between;
-  width: 310px;
+  justify-content: flex-start;
 }
 .l-footer__info ul li {
   width: 147px;
+  margin-right: 10px;
 }
 .l-footer__menu {
   width: 40%;
@@ -167,7 +174,7 @@ table {
 
 .banner {
   background-image: url("/Users/sawehmuedah/Desktop/Frontend-Assignment/Day03/img/BG.png");
-  height: 980px;
+  height: 1080px;
   background-size: 100% 100%;
   background-position: center;
   align-items: center;
@@ -186,14 +193,16 @@ table {
   font-size: 81px;
   line-height: 1.3;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .banner__bloc p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.5;
   color: #fff;
-  margin-bottom: 20px;
+  padding: 0 27px;
+  margin-bottom: 30px;
 }
 
 .p-bloc--activity .activity-wrap {
@@ -210,7 +219,7 @@ table {
   margin: 0px;
   border-radius: 20px;
   background-color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .p-bloc--activity .activity-content .card-bloc__inner {
   padding: 40px;
@@ -246,6 +255,8 @@ table {
 .p-bloc--activity .activity-content .card-bloc__inner .text-box {
   text-align: center;
   position: relative;
+  margin-top: -25px;
+  text-align: center;
 }
 .p-bloc--activity .activity-content .card-bloc__inner .text-box .price {
   position: relative;
@@ -259,7 +270,10 @@ table {
   justify-content: center;
   background-color: #fff;
   border-radius: 14px;
-  margin: -25px auto 10px;
+  margin-bottom: 23px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 .p-bloc--activity .activity-content .card-bloc__inner .text-box h3 {
   font-family: "Archivo Black", sans-serif;
@@ -267,13 +281,13 @@ table {
   font-weight: 900;
   color: #3b3735;
   margin-bottom: 10px;
-  height: 35px;
-  display: block;
 }
 .p-bloc--activity .activity-content .card-bloc__inner .text-box p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .p-bloc--form {
@@ -308,7 +322,7 @@ table {
 .p-bloc--form .form-bloc .img-box {
   width: 40%;
   margin: 0 auto;
-  padding: 20px 100px;
+  padding: 30px 100px 20px 100px;
 }
 .p-bloc--form .form-bloc .img-box img {
   width: 100%;
@@ -337,7 +351,7 @@ table {
   outline: none;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 15px;
   width: 80px;
   height: 80px;
   background: url(../img/icon.png) no-repeat;
@@ -355,6 +369,8 @@ table {
 }
 .c-btn a {
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   display: inline-flex;
   color: #fff;
   width: 100%;
@@ -370,6 +386,7 @@ table {
   border-radius: 25px;
   border: 1px solid #fff;
   margin-right: -20px;
+  width: 130px;
 }
 .c-btn--discover, .c-btn--view {
   width: 205px;
@@ -380,7 +397,6 @@ table {
 }
 .c-btn--more {
   width: 185px;
-  height: 50px;
 }
 .c-btn--more a {
   background-color: rgba(141, 141, 141, 0.1725490196);
@@ -398,17 +414,18 @@ table {
   margin: 0 auto;
 }
 .c-title .img-box {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .c-title h4 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Archivo", sans-serif;
   font-size: 40px;
   color: #3B3735;
   text-align: center;
   margin-bottom: 74px;
+  font-weight: 900;
 }
 
 .p-bloc--card {
@@ -419,19 +436,19 @@ table {
   justify-content: space-between;
 }
 .p-bloc--card .card-bloc {
-  width: 23%;
+  width: calc(25% - 15px);
   background-color: #fff;
   border-radius: 20px;
 }
 .p-bloc--card .card-bloc__inner {
-  padding: 20px 10px;
+  padding: 60px 40px;
   text-align: center;
 }
 .p-bloc--card .card-bloc__inner .img {
   width: 84px;
-  height: 100px;
+  height: 84px;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 27px;
 }
 .p-bloc--card .card-bloc__inner .img img {
   width: 100%;
@@ -441,13 +458,14 @@ table {
   text-align: center;
 }
 .p-bloc--card .card-bloc__inner .text h3 {
-  font-family: "Achivo", sans-serif;
+  font-family: "Achivo Black", sans-serif;
   font-weight: 900;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .p-bloc--card .card-bloc__inner .text p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: #3b3735;
 }/*# sourceMappingURL=style.css.map */

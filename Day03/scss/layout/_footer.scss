@@ -1,11 +1,12 @@
 .c-page-top {
     position: sticky;
     bottom: 0;
+    margin-bottom: -25px;
 
     &__inner {
         position: absolute;
         bottom: 0;
-        right: 178px;
+        right: 200px;
 
         a {
             display: block;
@@ -14,7 +15,7 @@
         }
 
         img {
-            width: auto;
+            width: 100%;
         }
     }
 
@@ -45,6 +46,8 @@
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             color: #3b3735;
+            line-height: 28px;
+            font-weight: 400;
         }
 
     }
@@ -54,16 +57,19 @@
         width: 40%;
 
         p{
-            margin-bottom: 40px;
+            margin-bottom: 43px;
+        }
+        h5{
+            margin-bottom: 22px;
         }
 
         ul{
             display: flex;
-            justify-content: space-between;
-            width: 310px;
+            justify-content: flex-start;
 
             li{
                 width: 147px;
+                margin-right: 10px;
             }
         }
     }
