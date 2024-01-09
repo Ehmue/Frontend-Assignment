@@ -130,21 +130,31 @@
     margin-bottom: 30px;
   }
 }
-.c-content__inner h3 {
+.c-content .c-bloc__summary h3 {
   padding: 20px;
   font-size: 20px;
   background-color: #f59e9e;
   color: #fff;
   position: relative;
 }
-.c-content__inner h3::after {
+.c-content .c-bloc__summary h3::after {
   content: "+";
   position: absolute;
   right: 20px;
 }
-.c-content p {
+.c-content .c-bloc__detail {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+.c-content .c-bloc.show .c-bloc__summary h3::after {
+  content: "-";
+}
+.c-content .c-bloc.show .c-bloc__detail {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
   padding: 10px 20px;
-  color: black;
 }
 
 .f-content {
